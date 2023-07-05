@@ -40,7 +40,7 @@ For example :
 }
 ``` 
 
-**WARNING : Use double slashes only if you are on a Windows system and do not use the same profile datadir for puppeteer and your personal profile.**
+**WARNING : Use double slashes only if you are on a Windows system and do not use the same profile datadir for puppeteer and your personal usage of Google Chrome.**
 
 # Run
 
