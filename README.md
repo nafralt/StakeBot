@@ -2,6 +2,8 @@
 
 A simple Discord bot in JS that notifies when a table tennis match has reached 2 sets to 0 in a discussion channel.
 
+![image](https://github.com/nafralt/StakeBot/assets/76498479/d0d49b8b-15f0-49a4-8f1b-ccba9eb42734)
+
 
 # Installation
 
