@@ -15,7 +15,17 @@ client.login(config.botToken);
 puppeteer.use(stealthPlugin());
 
 puppeteer
-.launch({headless: "new", executablePath: config.googleChromeExePath, userDataDir: config.googleChromeDataDirPath})
+.launch({headless: "new", args: [
+    '--disable-gpu',
+    '--disable-dev-shm-usage',
+    '--disable-setuid-sandbox',
+    '--no-first-run',
+    '--no-sandbox',
+    '--no-zygote',
+    '--deterministic-fetch',
+    '--disable-features=IsolateOrigins',
+    '--disable-site-isolation-trials',
+] ,executablePath: config.googleChromeExePath, userDataDir: config.googleChromeDataDirPath})
 .then(async (browser) => {
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36');
